@@ -1,25 +1,28 @@
 {
-  "name": "radio-n",
+  "name": "funradio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PandaDiscord/Radio-N.git"
+  "scripts": {
+    "start": "node index -p $PORT"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PandaDiscord/Radio-N/issues"
-  },
-  "homepage": "https://github.com/PandaDiscord/Radio-N#readme",
   "dependencies": {
     "discord.js": "^11.4.2",
     "ffmpeg-binaries": "^4.0.0",
     "node-gyp": "^3.8.0",
     "opusscript": "0.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PandaDiscord/Radio-N.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PandaDiscord/Radio-N/issues"
+  },
+  "homepage": "https://github.com/PandaDiscord/Radio-N#readme"
 }
