@@ -17,6 +17,8 @@ bot.on('message', async message => {
         message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
         connection.playArbitraryInput(config.url_station);
+        console.log(connection);
+        console.log('Successfully Connected');
          message.reply('I have successfully connected to the channel!');
         })
         .catch(console.log);
